@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayFit | Your Perfect Workout Partner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7c3aed',
+                        secondary: '#9333ea',
+                        lightpurple: '#c4b5fd',
+                        darkpurple: '#5b21b6'
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(120deg, #f0e6ff 0%, #f9f7ff 50%, #e6f0ff 100%);
+        }
+        .trainer-image {
+            border-radius: 50%;
+            background-color: #f9f7ff;
+            border: 4px solid #ffffff;
+            box-shadow: 0 10px 25px rgba(124, 58, 237, 0.1);
+        }
+        .program-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .program-card:hover {
+            transform: translateY(-5px);
+        }
+        .swiper-container {
+            overflow: hidden;
+            position: relative;
+        }
+    </style>
+</head>
+<body class="gradient-bg">
+    <!-- Navigation -->
+    <nav class="container mx-auto py-6 px-4 lg:px-0 flex justify-between items-center">
+        <div class="flex items-center">
+            <p><span class="text-primary text-3xl font-bold">🍋 StayFit.</span></p>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+            <a href="#" class="text-gray-800 hover:text-primary transition-colors duration-300">Home</a>
+            <a href="#zmimeTraining" class="text-gray-800 hover:text-primary transition-colors duration-300">Trainers</a>
+            <a href="#zmimeTraining" class="text-gray-800 hover:text-primary transition-colors duration-300">Programs</a>
+            <a href="#choosezmime" class="text-gray-800 hover:text-primary transition-colors duration-300">Experience</a>
+            <a href="#pricingZMime" class="text-gray-800 hover:text-primary transition-colors duration-300">Pricing</a>
+        </div>
+        <div>
+            <a href="#contactUszmm" class="bg-primary hover:bg-darkpurple text-white font-medium py-3 px-8 rounded-full transition-colors duration-300">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-4 lg:px-0 py-24">
+        <div class="text-center max-w-5xl mx-auto">
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-800 leading-tight">
+                Get Your Perfect Workout<br>
+                With The Perfect <span class="text-primary relative inline-block">
+                    Trainers
+                    <span class="absolute bottom-2 left-0 w-full h-2 bg-lightpurple opacity-40 rounded-full"></span>
+                </span>
+            </h1>
+        </div>
+
+        <!-- Trainer Carousel -->
+        <div class="swiper-container mt-20 relative">
+            
+            <div class="flex justify-center items-center space-x-4 md:space-x-8">
+                <!-- Left Trainer -->
+                <div class="w-32 h-32 md:w-64 md:h-64 trainer-image flex-shrink-0 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                         alt="Trainer with yoga mat" class="w-full h-full object-cover">
+                </div>
+                
+                <!-- Center Trainer (larger) -->
+                <div class="w-48 h-48 md:w-80 md:h-80 trainer-image flex-shrink-0 overflow-hidden z-10">
+                    <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                         alt="Trainer with headphones" class="w-full h-full object-cover">
+                </div>
+                
+                <!-- Right Trainer -->
+                <div class="w-32 h-32 md:w-64 md:h-64 trainer-image flex-shrink-0 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                         alt="Trainer with yoga mat" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="container mx-auto px-4 lg:px-0 py-24" id="zmimeTraining">
+        <div class="flex flex-col md:flex-row">
+            <!-- Left Column - Title -->
+            <div class="md:w-1/4 mb-12 md:mb-0">
+                <div class="sticky top-24">
+                    <div class="flex items-center mb-4">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2936/2936886.png" alt="Training icon" class="w-16 h-16">
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Training Programs</h2>
+                    <p class="text-xl md:text-2xl font-semibold text-gray-700 mt-4">We Offer For You</p>
+                </div>
+            </div>
+            
+            <!-- Right Column - Program Cards -->
+            <div class="md:w-3/4 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Yoga Card -->
+                <div class="bg-white rounded-xl shadow-lg p-6 program-card">
+                    <div class="flex justify-center mb-6">
+                        <span class="text-4xl">🧘</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Yoga</h3>
+                    <p class="text-gray-600">
+                        Enjoy yoga classes for all levels, body elastic, body weight workouts, barre, pilates, and more.
+                    </p>
+                </div>
+                
+                <!-- Muscles Card -->
+                <div class="bg-white rounded-xl shadow-lg p-6 program-card">
+                    <div class="flex justify-center mb-6">
+                        <span class="text-4xl">🏋️</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Muscles</h3>
+                    <p class="text-gray-600">
+                        Regular strength training improves the health of your bones, muscles, and connective tissue.
+                    </p>
+                </div>
+                
+                <!-- Fitness Card -->
+                <div class="bg-white rounded-xl shadow-lg p-6 program-card">
+                    <div class="flex justify-center mb-6">
+                        <span class="text-4xl">❤️</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Fitness</h3>
+                    <p class="text-gray-600">
+                        Your trainer will prepare and show you a workout regime designed to meet your fitness level and goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="container mx-auto px-4 lg:px-0 py-24" id="choosezmime">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Why Choose StayFit</h2>
+            <p class="text-gray-600 text-lg">Our fitness experts will help you find the perfect workout that fits your needs and goals.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Feature 1 -->
+            <div class="bg-white rounded-xl shadow-lg p-6 text-center program-card">
+                <div class="bg-lightpurple/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="text-3xl">🏆</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Expert Trainers</h3>
+                <p class="text-gray-600">Certified professionals with years of experience in various fitness domains.</p>
+            </div>
+            
+            <!-- Feature 2 -->
+            <div class="bg-white rounded-xl shadow-lg p-6 text-center program-card">
+                <div class="bg-lightpurple/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="text-3xl">📱</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Mobile App</h3>
+                <p class="text-gray-600">Track your progress, book sessions, and access workout routines on the go.</p>
+            </div>
+            
+            <!-- Feature 3 -->
+            <div class="bg-white rounded-xl shadow-lg p-6 text-center program-card">
+                <div class="bg-lightpurple/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="text-3xl">🥗</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Nutrition Plans</h3>
+                <p class="text-gray-600">Custom meal plans that complement your workout routine and lifestyle.</p>
+            </div>
+            
+            <!-- Feature 4 -->
+            <div class="bg-white rounded-xl shadow-lg p-6 text-center program-card">
+                <div class="bg-lightpurple/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="text-3xl">👥</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-3">Community</h3>
+                <p class="text-gray-600">Join a supportive community of like-minded individuals on the same journey.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="container mx-auto px-4 lg:px-0 py-24 bg-white rounded-xl shadow-lg" id="pricingZMime">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Simple Pricing Plans</h2>
+            <p class="text-gray-600 text-lg">Choose the plan that works best for your fitness journey.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <!-- Basic Plan -->
+            <div class="border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">Basic</h3>
+                <p class="text-gray-600 mb-6">Perfect for beginners</p>
+                <div class="mb-6">
+                    <span class="text-4xl font-bold text-primary">$29</span>
+                    <span class="text-gray-600">/month</span>
+                </div>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span>2 Training Sessions/Week</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span>Basic Workout Plan</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span>App Access</span>
+                    </li>
+                </ul>
+                <a href="#" class="block w-full py-3 px-6 text-center border border-primary text-primary rounded-full hover:bg-primary hover:text-white transition-colors duration-300 font-medium">Get Started</a>
+            </div>
+            
+            <!-- Pro Plan -->
+            <div class="border-2 border-primary rounded-xl p-8 shadow-xl relative transform scale-105">
+                <div class="absolute top-0 right-0 bg-primary text-white px-4 py-1 text-sm font-bold rounded-bl-lg rounded-tr-lg">POPULAR</div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">Pro</h3>
+                <p class="text-gray-600 mb-6">For dedicated fitness enthusiasts</p>
+                <div class="mb-6">
+                    <span class="text-4xl font-bold text-primary">$59</span>
+                    <span class="text-gray-600">/month</span>
+                </div>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span>5 Training Sessions/Week</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span>Custom Workout Plan</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span>Nutrition Guide</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span>Priority Support</span>
+                    </li>
+                </ul>
+                <a href="#" class="block w-full py-3 px-6 text-center bg-primary text-white rounded-full hover:bg-darkpurple transition-colors duration-300 font-medium">Get Started</a>
+            </div>
+            
+            <!-- Premium Plan -->
+            <div class="border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">Premium</h3>
+                <p class="text-gray-600 mb-6">The complete package</p>
+                <div class="mb-6">
+                    <span class="text-4xl font-bold text-primary">$99</span>
+                    <span class="text-gray-600">/month</span>
+                </div>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span>Unlimited Training</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span>Advanced Workout Plan</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span>Custom Nutrition Plan</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span>1-on-1 Coaching</span>
+                    </li>
+                </ul>
+                <a href="#" class="block w-full py-3 px-6 text-center border border-primary text-primary rounded-full hover:bg-primary hover:text-white transition-colors duration-300 font-medium">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="container mx-auto px-4 lg:px-0 py-24">
+        <div class="bg-primary rounded-2xl overflow-hidden">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 p-12 md:p-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Start Your Fitness Journey?</h2>
+                    <p class="text-white/90 text-lg mb-8">Join thousands of satisfied clients who have transformed their bodies and lives with our expert trainers and personalized programs.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-white text-primary hover:bg-gray-100 font-semibold py-3 px-8 rounded-full transition-colors duration-300">Sign Up Now</a>
+                        <a href="#" class="border border-white text-white hover:bg-white/10 font-semibold py-3 px-8 rounded-full transition-colors duration-300">Learn More</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Fitness Trainer" class="w-full h-full object-cover object-center">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4 lg:px-0">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center mb-6">
+                        <span class="text-primary text-2xl font-bold">🍋 StayFit.</span>
+                    </div>
+                    <p class="text-gray-600 mb-6">Transforming lives through fitness, one workout at a time.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.054 10.054 0 01-3.127 1.184A4.92 4.92 0 0011.78 8.28A13.936 13.936 0 011.64 3.16a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12s.014 3.668.072 4.948c.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24s3.668-.014 4.948-.072c4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-6">Quick Links</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300">Home</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300">About Us</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300">Services</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300">Trainers</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Programs -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-6">Programs</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300">Yoga Classes</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300">Strength Training</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300">Cardio Fitness</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300">Personal Training</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300">Group Classes</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div id="contactUszmm">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-6">Contact Us</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-primary mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span class="text-gray-600">123 Fitness Street, Los Angeles, CA 90001</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-primary mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <span class="text-gray-600">info@StayFit.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-primary mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <span class="text-gray-600">(555) 123-4567</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-200 mt-12 pt-8">
+                <p class="text-center text-gray-600">&copy; 2025 StayFit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Simple carousel functionality could be added here
+    </script>
+</body>
+</html>
